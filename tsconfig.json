@@ -1,0 +1,10 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "jsx": "preserve"
+  },
+  "include": [
+    "src"
+  ]
+}
