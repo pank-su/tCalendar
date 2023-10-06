@@ -1,23 +1,13 @@
 import React from "react";
-import {View, Text} from "react-native";
+import {View, Text, Platform} from "react-native";
+import {MD2Colors, PaperProvider, ActivityIndicator} from "react-native-paper";
 
 // Look at public/index.html!
 
 class App extends React.Component {
     render() {
         return (
-            <View
-                style={{
-                    flex: 1,
-                    alignItems: "center",
-                    justifyContent: "center",
-                    backgroundColor: "#44bb44"
-                }}
-            >
-                <View>
-                    <Text style={{color: "#ffffff"}}>Hello</Text>
-                </View>
-            </View>
+            <ActivityIndicator animating={true} color={MD2Colors.red800} />
         );
     }
 }
